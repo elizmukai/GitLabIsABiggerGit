@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FF71c8f7"
     tools:context=".TextModActivity"
-    android:baselineAligned="true">
+    android:baselineAligned="false">
 
 
     <Space
