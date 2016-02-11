@@ -44,6 +44,8 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
 
     protected Button upperCase = null;
 
+    protected Button rmSpace = null;
+    protected Button punct = null;
 
     protected String append;
     protected Button copyName;
@@ -116,6 +118,11 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         lowerButton = (Button)findViewById(R.id.button7);
         lowerButton.setOnClickListener(this);
 
+        rmSpace = (Button)findViewById(R.id.spaces);
+        rmSpace.setOnClickListener(this);
+
+        punct = (Button)findViewById(R.id.punctuation);
+        punct.setOnClickListener(this);
 
 
     }
@@ -179,6 +186,16 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         else if (v.getId()==R.id.button)
         {
             this.editSandbox.setText("");
+        }
+        else if (v.getId() == R.id.spaces) {
+            String input = this.editSandbox.getText().toString();
+            input = input.replace(" ", "");
+            this.editSandbox.setText(input);
+        }
+        else if (v.getId() == R.id.punctuation) {
+            String input = this.editSandbox.getText().toString();
+            String alpha = input.replaceAll("[^a-zA-Z\\s]", "").replaceAll("\\s+", " ");
+            this.editSandbox.setText(alpha);
         }
 
     }
