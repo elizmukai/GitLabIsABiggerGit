@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- The two arrays below should always be of the same size. The ordering
+     of their elements should be such that the first elements of each correspond,
+     second elements of each correspond, etc. -->
+
+    <array name="imageIdArray">
+        <item>@mipmap/kitten</item>
+        <item>@mipmap/nuxoll</item>
+        <item>@mipmap/vegdahl</item>
+        <item>@mipmap/teresa</item>
+        <item>@mipmap/scottiez</item>
+        <item>@mipmap/markus</item>
+        <item>@mipmap/liz</item>
+    </array>
+
+    <string-array name="spinner_names">
+        <item>Sleeping Kitten</item>
+        <item>Dr. Andrew Nuxoll</item>
+        <item>Dr. Steven Vegdahl</item>
+        <item>Teresa</item>
+        <item>Scottie</item>
+        <item>Markus</item>
+        <item>Liz</item>
+    </string-array>
+
+</resources>
