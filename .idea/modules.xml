@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/GitLabIsAGit-master.iml" filepath="$PROJECT_DIR$/GitLabIsAGit-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GitLabIsABiggerGit.iml" filepath="$PROJECT_DIR$/GitLabIsABiggerGit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
