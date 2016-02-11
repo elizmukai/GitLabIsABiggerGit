@@ -50,6 +50,8 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
     protected String append;
     protected Button copyName;
     protected Spinner spinner;
+
+    protected Button alt;
     /**
      * @see android.app.Activity#onCreate(android.os.Bundle)
      */
@@ -118,6 +120,9 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         lowerButton = (Button)findViewById(R.id.button7);
         lowerButton.setOnClickListener(this);
 
+        alt = (Button)findViewById(R.id.alternate);
+        alt.setOnClickListener(this);
+
 
 
     }
@@ -181,6 +186,25 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
         else if (v.getId()==R.id.button)
         {
             this.editSandbox.setText("");
+        }
+
+        else if (v.getId()==R.id.alternate)
+        {
+            String text = this.editSandbox.getText().toString();
+            int len = text.length();
+            char[] test = text.toCharArray();
+
+            for (int i=0;i<len;i++)
+            {
+                if (i%2==1)
+                {
+                    char temp = test[i];
+                    Character.toUpperCase(temp);
+                    test[i]=temp;
+                }
+            }
+            Log.i("sldfkjg",String.valueOf(test));
+            this.editSandbox.setText(String.valueOf(test));
         }
 
     }
