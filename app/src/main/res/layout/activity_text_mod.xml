@@ -4,8 +4,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_color"
-    tools:context=".TextModActivity">
+    android:background="#FF71c8f7"
+    tools:context=".TextModActivity"
+    android:baselineAligned="true">
 
 
     <Space
