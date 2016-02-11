@@ -199,7 +199,8 @@ public class TextModActivity extends ActionBarActivity implements View.OnClickLi
                 if (i%2==1)
                 {
                     char temp = test[i];
-                    Character.toUpperCase(temp);
+                    temp = Character.toUpperCase(temp);
+                    Log.i("HSDLF",String.valueOf(temp));
                     test[i]=temp;
                 }
             }
